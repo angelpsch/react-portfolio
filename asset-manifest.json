@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/angelpsch/react-portfoliostatic/css/main.b0807869.chunk.css",
-    "main.js": "/angelpsch/react-portfoliostatic/js/main.891cde2d.chunk.js",
-    "main.js.map": "/angelpsch/react-portfoliostatic/js/main.891cde2d.chunk.js.map",
-    "runtime-main.js": "/angelpsch/react-portfoliostatic/js/runtime-main.0c22bd38.js",
-    "runtime-main.js.map": "/angelpsch/react-portfoliostatic/js/runtime-main.0c22bd38.js.map",
-    "static/css/2.4000f4b6.chunk.css": "/angelpsch/react-portfoliostatic/css/2.4000f4b6.chunk.css",
-    "static/js/2.52382aff.chunk.js": "/angelpsch/react-portfoliostatic/js/2.52382aff.chunk.js",
-    "static/js/2.52382aff.chunk.js.map": "/angelpsch/react-portfoliostatic/js/2.52382aff.chunk.js.map",
-    "index.html": "/angelpsch/react-portfolioindex.html",
-    "precache-manifest.6ec8ac15dec3389d9002891f15fbf18d.js": "/angelpsch/react-portfolioprecache-manifest.6ec8ac15dec3389d9002891f15fbf18d.js",
-    "service-worker.js": "/angelpsch/react-portfolioservice-worker.js",
-    "static/css/2.4000f4b6.chunk.css.map": "/angelpsch/react-portfoliostatic/css/2.4000f4b6.chunk.css.map",
-    "static/css/main.b0807869.chunk.css.map": "/angelpsch/react-portfoliostatic/css/main.b0807869.chunk.css.map",
-    "static/js/2.52382aff.chunk.js.LICENSE.txt": "/angelpsch/react-portfoliostatic/js/2.52382aff.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/angelpsch/react-portfoliostatic/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
+    "main.css": "/react-portfolio/static/css/main.b0807869.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.9382a738.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.9382a738.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
+    "static/css/2.4caf45c0.chunk.css": "/react-portfolio/static/css/2.4caf45c0.chunk.css",
+    "static/js/2.52382aff.chunk.js": "/react-portfolio/static/js/2.52382aff.chunk.js",
+    "static/js/2.52382aff.chunk.js.map": "/react-portfolio/static/js/2.52382aff.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.ab231cdb759e144ddc934d0b27da1228.js": "/react-portfolio/precache-manifest.ab231cdb759e144ddc934d0b27da1228.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/2.4caf45c0.chunk.css.map": "/react-portfolio/static/css/2.4caf45c0.chunk.css.map",
+    "static/css/main.b0807869.chunk.css.map": "/react-portfolio/static/css/main.b0807869.chunk.css.map",
+    "static/js/2.52382aff.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.52382aff.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react-portfolio/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c22bd38.js",
-    "static/css/2.4000f4b6.chunk.css",
+    "static/js/runtime-main.213b1880.js",
+    "static/css/2.4caf45c0.chunk.css",
     "static/js/2.52382aff.chunk.js",
     "static/css/main.b0807869.chunk.css",
-    "static/js/main.891cde2d.chunk.js"
+    "static/js/main.9382a738.chunk.js"
   ]
 }
