@@ -24,6 +24,7 @@ const useStyles = makeStyles({
   }
 });
 
+
 export default function CenteredTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
