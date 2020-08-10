@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Portfolio
+
+## Description
+This is my portfolio built through React.js. This includes:
+- Resume
+- Portfolio
+- Contact Information
+---
+## React Documentation
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+
 
 ## Available Scripts
 
