@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.b0807869.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.ae503621.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.ae503621.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.30f8d9ec.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.eae04258.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.eae04258.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.2aee8cf1.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.2aee8cf1.js.map",
     "static/css/2.4caf45c0.chunk.css": "/react-portfolio/static/css/2.4caf45c0.chunk.css",
-    "static/js/2.045461a3.chunk.js": "/react-portfolio/static/js/2.045461a3.chunk.js",
-    "static/js/2.045461a3.chunk.js.map": "/react-portfolio/static/js/2.045461a3.chunk.js.map",
+    "static/js/2.98b3d66b.chunk.js": "/react-portfolio/static/js/2.98b3d66b.chunk.js",
+    "static/js/2.98b3d66b.chunk.js.map": "/react-portfolio/static/js/2.98b3d66b.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.9a1e103337f0b2dac56efc1f58628f9e.js": "/react-portfolio/precache-manifest.9a1e103337f0b2dac56efc1f58628f9e.js",
+    "precache-manifest.e93830b7077a45c248e647ebd2f4d1d4.js": "/react-portfolio/precache-manifest.e93830b7077a45c248e647ebd2f4d1d4.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/css/2.4caf45c0.chunk.css.map": "/react-portfolio/static/css/2.4caf45c0.chunk.css.map",
-    "static/css/main.b0807869.chunk.css.map": "/react-portfolio/static/css/main.b0807869.chunk.css.map",
-    "static/js/2.045461a3.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.045461a3.chunk.js.LICENSE.txt",
+    "static/css/main.30f8d9ec.chunk.css.map": "/react-portfolio/static/css/main.30f8d9ec.chunk.css.map",
+    "static/js/2.98b3d66b.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.98b3d66b.chunk.js.LICENSE.txt",
+    "static/media/EmployeeDirect.PNG": "/react-portfolio/static/media/EmployeeDirect.0735891e.PNG",
+    "static/media/StackSquid.PNG": "/react-portfolio/static/media/StackSquid.920752c6.PNG",
+    "static/media/campsitefinder.PNG": "/react-portfolio/static/media/campsitefinder.4ff4bbfe.PNG",
     "static/media/index.css": "/react-portfolio/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.2aee8cf1.js",
     "static/css/2.4caf45c0.chunk.css",
-    "static/js/2.045461a3.chunk.js",
-    "static/css/main.b0807869.chunk.css",
-    "static/js/main.ae503621.chunk.js"
+    "static/js/2.98b3d66b.chunk.js",
+    "static/css/main.30f8d9ec.chunk.css",
+    "static/js/main.eae04258.chunk.js"
   ]
 }
