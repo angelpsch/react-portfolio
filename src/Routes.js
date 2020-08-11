@@ -14,7 +14,7 @@ render(){
      return (
             <div>
                 <Switch>
-                    <Route exact path='react-portfolio/' pathname="Angel Schultz" component={Home}>
+                    <Route exact path='/' pathname="Angel Schultz" component={Home}>
                         <Home />
                     </Route>
                     <Route path='/resume' component={Resume}>
