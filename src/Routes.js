@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Header from './components/Header'; 
+import Header from './components/HeaderTabs'; 
 
 // Pages
 import Home from './pages/Home';
@@ -13,18 +13,17 @@ export default class Routes extends Component {
 render(){
      return (
             <div>
-                <Header />
                 <Switch>
-                    <Route exact path='/'>
+                    <Route exact path='/' pathname="Angel Schultz" component={Home}>
                         <Home />
                     </Route>
-                    <Route path='/resume'>
+                    <Route path='/resume' component={Resume}>
                         <Resume />
                     </Route>
-                    <Route path='/portfolio'>
+                    <Route path='/portfolio' component={Portfolio}>
                         <Portfolio />
                     </Route>
-                    <Route path='/contact'>
+                    <Route path='/contact' component={Contact}>
                         <Contact />
                     </Route>
                 </Switch>
