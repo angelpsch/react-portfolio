@@ -169,7 +169,7 @@ export default function AdvancedGridList() {
         <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
       <Typography variant='h3' classname={classes.type}>
-            Team Projects
+      <FontAwesomeIcon icon={['fad', 'user-friends']} /> Team Projects
           </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -203,7 +203,7 @@ export default function AdvancedGridList() {
         <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
       <Typography variant='h3' classname={classes.type}>
-            Individual Projects
+      <FontAwesomeIcon icon={['fad', 'user']} /> Individual Projects
           </Typography>
           </AccordionSummary>
           <AccordionDetails>

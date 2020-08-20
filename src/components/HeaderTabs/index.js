@@ -50,16 +50,16 @@ export default function Header(props) {
         centered
         aria-label="icon label tabs"
       >
-        <Link to={'/'}>
+        <Link to={'/'} className='navItem'>
             <Tab icon={<HomeIcon />} label="Home" className ={classes.tabs}/>
         </Link>
-        <Link to={'/resume'}>
+        <Link to={'/resume'} className='navItem'>
             <Tab icon={<ListAltIcon />} label="Resume" className ={classes.tabs}/>
         </Link>
-        <Link to={'/portfolio'}>
+        <Link to={'/portfolio'} className='navItem'>
             <Tab icon={<AppsIcon />} label="Portfolio" className ={classes.tabs}/>
         </Link>
-        <Link to={'/contact'}>
+        <Link to={'/contact'} className='navItem'>
             <Tab icon={<ChatIcon />} label="Contact" className ={classes.tabs}/>
         </Link>
    

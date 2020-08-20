@@ -1,6 +1,12 @@
 @import url("https://use.typekit.net/gcx6nic.css");
 @import url('https://use.typekit.net/jri1ggg.css');
 
+// Variables 
+$darker-teal: #1C3A3E; 
+$light-teal: #009688;
+$lighter-teal: #6bcfc2; 
+$dark-teal: #00695f;
+
 h1, h2, h3, h4, h5 {
     text-align: center;
     font-family: 'serenity', sans-serif;
@@ -12,7 +18,7 @@ h1, h2, h3, h4, h5 {
 
 .logo {
     text-align: center;
-    color: rgb(107, 207, 194); 
+    color: $lighter-teal; 
     font-family: 'fave-script-pro', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -21,3 +27,60 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding-top: 0.25em; 
 } 
+
+.navItem {
+    text-decoration-line: none;
+}
+
+
+
+
+    #contact {
+        margin: 0 auto;
+        margin-top: 1em; 
+        width: 70%; 
+        background-color: $darker-teal;
+    .form {
+        margin: 0 auto; 
+        padding-top: 2.5em;
+        padding-bottom: 3em;  
+        width: 50%; 
+        .contactInput {
+            width: 100%; 
+            margin: 0 auto;
+            margin-bottom: 1em; 
+            
+        }
+    }
+        
+    }
+
+    label.MuiFormLabel-root{
+        color: $light-teal;
+    }
+
+    label.MuiFormLabel-root.Mui-focused {
+        color: $lighter-teal; 
+    }
+
+    .Mui-focused.MuiInputBase-formControl.Mui-focused  {
+        color: $light-teal; 
+        border-bottom: $light-teal 1px solid; 
+    }
+
+    .MuiInputBase-root.MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-formControl.MuiFilledInput-underline:after {
+        transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+        transform: scaleX(0); 
+
+        border-bottom: $light-teal 1px solid; 
+
+    }
+
+    // Media Queries
+
+    @media (min-width: 768px) {
+        
+    }
+    
+        
+    

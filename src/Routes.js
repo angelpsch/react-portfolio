@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Header from './components/HeaderTabs'; 
 
 // Pages
 import Home from './pages/Home';
@@ -14,7 +13,7 @@ render(){
      return (
             <div>
                 <Switch>
-                    <Route exact path='/react-portfolio/' pathname="Angel Schultz" component={Home}>
+                    <Route exact path='/' pathname="Angel Schultz" component={Home}>
                         <Home />
                     </Route>
                     <Route path='/resume' component={Resume}>
