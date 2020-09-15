@@ -26,11 +26,11 @@ const useStyles = makeStyles((theme) => ({
     },
     dateOne: {
         color: '#EB7472',
-        fontSize: '1em'
+        fontSize: '1.5em'
     },
     dateTwo: {
         color: '#FFA88E',
-        fontSize: '1em'
+        fontSize: '1.5em'
     },
     school: {
         fontStyle: 'italic'
@@ -42,10 +42,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Education() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+
 
   return (
-    <Timeline align="alternate">
+    <Timeline align="alternate" id="timeline">
     {/* 1 */}
   <TimelineItem>
     <TimelineOppositeContent>

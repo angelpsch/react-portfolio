@@ -19,13 +19,12 @@ import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import CampsiteFinder from '../images/campsitefinder.PNG';
 import EmployeeDirect from '../images/EmployeeDirect.PNG';
 import Squid from '../images/StackSquid.PNG';
+import DecisionMaker from '../images/decision-maker-app.PNG';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: '0 auto', 
-    marginTop: '1em',
+    margin: '0 auto',
     color: '#1C3A3E',
-    padding: '5px',
     paddingBottom: '2em'
     
   },
@@ -58,7 +57,7 @@ container: {
 }
 }));
 
-const projectData = [
+const team = [
     {
         img: CampsiteFinder, 
         title: 'Campsite Finder',
@@ -70,9 +69,9 @@ const projectData = [
         url: 'https://squidstack.herokuapp.com/'
     },
     {
-        img: '', 
-        title: 'Decision Maker App - In Progress',
-        url: 'https://github.com/hansbrougha/decision-maker-app'
+        img: DecisionMaker, 
+        title: 'Decision Maker App',
+        url: 'https://angelpsch-decision-maker-app.herokuapp.com/'
     },
     // {
     //     img: EmployeeDirect, 
@@ -82,27 +81,12 @@ const projectData = [
   
     
 ]
-const exampleData = [
+const individual = [
     {
-        img: CampsiteFinder, 
-        title: 'Campsite Finder',
-        url: 'https://huhndaniel.github.io/campsite-finder'
-    },
-    {
-        img: Squid, 
-        title: 'StackSquid',
-        url: 'https://squidstack.herokuapp.com/'
-    },
-    {
-        img: '', 
-        title: 'Decision Maker App - In Progress',
-        url: 'https://github.com/hansbrougha/decision-maker-app'
-    },
-    // {
-    //     img: EmployeeDirect, 
-    //     title: 'Employee Directory Example',
-    //     url: 'https://angelpsch.github.io/employee-directory-react/'
-    // },
+        img: EmployeeDirect, 
+        title: 'Employee Directory Using React',
+        url: 'https://angelpsch.github.io/employee-directory-react/'
+    }
   
     
 ]
@@ -166,15 +150,16 @@ export default function AdvancedGridList() {
   return (
     <div className={classes.root}>
 
+
         <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-      <Typography variant='h3' classname={classes.type}>
+      <h1 className='title'>
       <FontAwesomeIcon icon={['fad', 'user-friends']} /> Team Projects
-          </Typography>
+          </h1>
           </AccordionSummary>
           <AccordionDetails>
       <GridList cellHeight={500} cellWidth={700} spacing={3} cols={3} className={classes.root}>
-        {projectData.map((tile) => (
+        preventDefault({team.map((tile) => (
           <GridListTile key={tile.img} >
             <img src={tile.img} alt={tile.title} component='img' className={classes.img}/>
             <GridListTileBar
@@ -197,18 +182,18 @@ export default function AdvancedGridList() {
             />
           </GridListTile>
         ))}
-        </GridList>
+        )</GridList>
         </AccordionDetails>
         </Accordion>
         <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-      <Typography variant='h3' classname={classes.type}>
+      <h1 className='title'>
       <FontAwesomeIcon icon={['fad', 'user']} /> Individual Projects
-          </Typography>
+          </h1>
           </AccordionSummary>
           <AccordionDetails>
       <GridList cellHeight={500} cellWidth={700} spacing={3} cols={3} className={classes.root}>
-        {exampleData.map((tile) => (
+        {individual.map((tile) => (
           <GridListTile key={tile.img} >
             <img src={tile.img} alt={tile.title} component='img' className={classes.img}/>
             <GridListTileBar

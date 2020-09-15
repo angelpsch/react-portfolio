@@ -19,22 +19,24 @@ const useStyles = makeStyles((theme) => ({
         padding: '1em',
         width: '100%',
         backgroundColor:'#EB8989',
-        color: '#1C3A3E'
+        color: '#1C3A3E',
+  
   },
   paperTwo: {
         padding: '1em',
-        marginRight: '1em',
-        width: '93%',
+        margin: 'auto 0',
+        width: '91%',
         backgroundColor: '#FFA88E',
-        color: '#1C3A3E'
+        color: '#1C3A3E',
+
   },
   dateOne: {
       color: '#EB7472',
-      fontSize: '1em'
+      fontSize: '1.5em'
   },
   dateTwo: {
       color: '#FFA88E',
-      fontSize: '1em'
+      fontSize: '1.5em'
   },
   employer: {
       fontStyle: 'italic'
@@ -48,12 +50,12 @@ export default function CustomizedTimeline() {
   const classes = useStyles();
 
   return (
-    <Timeline align="alternate">
+    <Timeline align='alternate'>
         {/* 1 */}
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="overline" className={classes.dateOne}>
-            Dec. 2017 - August 2019
+            Dec 2017 - Aug 2019
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -75,7 +77,7 @@ export default function CustomizedTimeline() {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="overline" className={classes.dateTwo}>
-            Jan. 2017 - Dec. 2017
+            Jan 2017 - Dec 2017
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -97,7 +99,7 @@ export default function CustomizedTimeline() {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="overline" className={classes.dateOne}>
-            March 2016 - March 2017
+            Mar 2016 - Mar 2017
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -119,7 +121,7 @@ export default function CustomizedTimeline() {
         <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="overline" className={classes.dateTwo}>
-           Nov. 2015 - March 2016
+           Nov 2015 - Mar 2016
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>

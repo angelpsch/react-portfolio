@@ -6,15 +6,44 @@ $darker-teal: #1C3A3E;
 $light-teal: #009688;
 $lighter-teal: #6bcfc2; 
 $dark-teal: #00695f;
+$coral: #EB8989; 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .title {
     text-align: center;
     font-family: 'serenity', sans-serif;
     font-weight: 300;
     font-style: normal; 
+    margin: 0 auto; 
+    font-size: 300%;
+}
+
+.subtitle {
+    font-size: 200%; 
+    margin: 0 auto; 
+    margin-right: 1em; 
+    margin-top: 0.5em; 
+    text-align: center;
+}
+
+#profile {
+    margin: 0 auto; 
+    width: 500px; 
+    height: auto; 
+}
+
+div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6 {
+    max-width: fit-content; 
+    margin: 0;
 }
 
 
+
+#paper {
+    background: $darker-teal; 
+    color: $dark-teal; 
+    width: 50%; 
+    padding: 0.25em 2em 2em 2em; 
+}
 
 .logo {
     text-align: center;
@@ -27,6 +56,17 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding-top: 0.25em; 
 } 
+.title {
+    text-align: center;
+    color: $dark-teal; 
+    font-family: 'fave-script-pro', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 700%; 
+    padding: 0; 
+    margin: 0 auto;
+    padding-top: 0.25em; 
+} 
 
 .navItem {
     text-decoration-line: none;
@@ -37,14 +77,12 @@ h1, h2, h3, h4, h5 {
 
     #contact {
         margin: 0 auto;
-        margin-top: 1em; 
-        width: 70%; 
         background-color: $darker-teal;
     .form {
         margin: 0 auto; 
         padding-top: 2.5em;
         padding-bottom: 3em;  
-        width: 50%; 
+        width: 60%; 
         .contactInput {
             width: 100%; 
             margin: 0 auto;
@@ -76,10 +114,49 @@ h1, h2, h3, h4, h5 {
 
     }
 
+    .resumeContainer {
+        margin: 0 auto; 
+        .resumeContent {
+            margin: 0 auto; 
+            
+        }
+    }
+
+    #skills {
+        list-style-type: none;
+        width: 100%;
+        padding: 1em; 
+        background-color: $coral; 
+        li {
+            .chip {
+            margin: 0.25em; 
+        }
+        }
+        
+    }
+    
+    #timeline{
+        margin: auto 0; 
+        padding: 1em; 
+    }
     // Media Queries
 
-    @media (min-width: 768px) {
-        
+    @media (max-width: 1023px) {
+        #profile {
+            width: 80%; 
+        }
+        #contact{
+        .form {
+            width: 80%;
+        }}
+        #skills {
+            padding: 0;
+            width: 100%; 
+            li {
+                margin: 0 auto;
+                display: inline-block; 
+            }
+        }
     }
     
         

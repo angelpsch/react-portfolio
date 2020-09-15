@@ -15,7 +15,7 @@ import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles({
   root: {
-    width: '40%',
+    width: '90%',
     margin: '0 auto',
     marginTop: '1em',
     backgroundColor: '#1C3A3E',
@@ -64,7 +64,7 @@ const useStyles = makeStyles({
   },
   express: {
       fontFamily: 'open-sans, sans-serif',
-      fontWeight: 300,
+      fontWeight: 600,
       display: 'inline'
   },
   links: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles({
       background:'#FFA88E',
       display: 'inline-block',
       textAlign: 'center',
-      fontSize: '1em',
+      fontSize: '2em',
       color: '#1C3A3E'
   },
   container: {
@@ -96,10 +96,10 @@ export default function SimpleCard() {
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           
         </Typography>
-        <Typography variant="h3" component="h1">
+        <h1>
           <FontAwesomeIcon icon={['fad', 'archive']} /> Other Portfolios
           <Divider />
-        </Typography>
+        </h1>
         <div className={classes.container}>
         <Paper className={classes.links} component='a' href="https://angelpsch.github.io/updated-portfolio/" target="_blank">
         

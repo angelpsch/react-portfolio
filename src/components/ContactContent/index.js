@@ -21,8 +21,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         '& > *': {
             margin: '0 auto',
-            marginTop: '1em',
-            width: '80%',
             height: theme.spacing(16),
             backgroundColor: '#1C3A3E', 
             primary: '#6bcfc2'

@@ -14,12 +14,12 @@ import '../styles.scss'
 
 const useStyles = makeStyles({
     root: {
-        margin: '0 auto',
-        marginTop: '1em',
-        color: '#1C3A3E',
-        padding: '5px',
-        paddingBottom: '2em',
-        textAlign: 'center'
+        // margin: '0 auto',
+        // marginTop: '1em',
+        // color: '#1C3A3E',
+        // padding: '5px',
+        // paddingBottom: '2em',
+        // textAlign: 'center',
     }, // a style rule
 
   });
@@ -30,6 +30,7 @@ const Accordion = withStyles({
     boxShadow: 'none',
     background: '#1C3A3E',
     color: '#00695f',
+    textAlign: 'center',
    
     '&:not(:last-child)': {
       borderBottom: 0,
@@ -50,6 +51,7 @@ const AccordionSummary = withStyles({
     borderBottom: '1px solid rgba(0, 0, 0, .125)',
     marginBottom: -1,
     minHeight: 56,
+    textAlign: 'center',
     '&$expanded': {
       minHeight: 56,
     },
@@ -81,10 +83,10 @@ export default function CustomizedAccordions(props) {
     setExpanded(newExpanded ? panel : false);
   };
   return (
-    <div className={classes.root}>
+    <div className='resumeContainer'>
       <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography  variant='h3'>Summary</Typography>
+          <h1 className='title'>Summary</h1>
         </AccordionSummary>
         <AccordionDetails>
           <Typography >
@@ -94,30 +96,30 @@ export default function CustomizedAccordions(props) {
       </Accordion>
       <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography variant='h3'>Education</Typography>
+        <h1 className='title'>Education</h1>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.root}>
+          <Typography className='resumeContent'>
             <Education></Education>
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography variant='h3'>Experience</Typography>
+          <h1 className="title">Experience</h1>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.root}>
+          <Typography className='resumeContent'>
             <Experience></Experience>
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography variant='h3'>Skills</Typography>
+          <h1 className="title">Skills</h1>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.root}>
+          <Typography className='resumeContent'>
             <Skills />
           </Typography>
         </AccordionDetails>

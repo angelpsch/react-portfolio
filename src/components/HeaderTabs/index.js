@@ -1,13 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import PropTypes from 'prop-types';
+import { Paper, Tabs, Typography, Tab, Box, } from '@material-ui/core/';
 import { Link, withRouter } from "react-router-dom";
-import ListAltIcon from '@material-ui/icons/ListAlt';
-import AppsIcon from '@material-ui/icons/Apps';
-import ChatIcon from '@material-ui/icons/Chat';
-import HomeIcon from '@material-ui/icons/Home';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 
 import '../styles.scss'; 
 
@@ -21,10 +17,44 @@ const useStyles = makeStyles({
   },
   tabs: {
       color: '#fff',
-      borderBottom: 'none'
+      borderBottom: 'none',
+      fontSize: '2em',
+      margin: '0.25em'
   }
 });
 
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`scrollable-force-tabpanel-${index}`}
+      aria-labelledby={`scrollable-force-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `scrollable-force-tab-${index}`,
+    'aria-controls': `scrollable-force-tabpanel-${index}`,
+  };
+}
 
 export default function Header(props) {
   const classes = useStyles();
@@ -34,8 +64,9 @@ export default function Header(props) {
     setValue(newValue);
   };
 
+  const vw = window.innerWidth || document.documentElement.clientWidth;
 
-
+if (vw > 425){
   return (
   
     <Paper className={classes.root}>
@@ -51,19 +82,26 @@ export default function Header(props) {
         aria-label="icon label tabs"
       >
         <Link to={'/'} className='navItem'>
-            <Tab icon={<HomeIcon />} label="Home" className ={classes.tabs}/>
+          <TabPanel className={classes.tabs}>
+            <FontAwesomeIcon icon={['fad', 'home']} label="Home"/>
+            <Typography variant='overline'>Home</Typography>
+          </TabPanel>
         </Link>
         <Link to={'/resume'} className='navItem'>
-            <Tab icon={<ListAltIcon />} label="Resume" className ={classes.tabs}/>
+          <FontAwesomeIcon icon={['fad', 'file-alt']} label="Home" className ={classes.tabs}/>
+            {/* <Tab icon={<ListAltIcon />} label="Resume" className ={classes.tabs}/> */}
         </Link>
         <Link to={'/portfolio'} className='navItem'>
-            <Tab icon={<AppsIcon />} label="Portfolio" className ={classes.tabs}/>
+            {/* <Tab icon={<AppsIcon />} label="Portfolio" className ={classes.tabs}/> */}
         </Link>
         <Link to={'/contact'} className='navItem'>
-            <Tab icon={<ChatIcon />} label="Contact" className ={classes.tabs}/>
+            {/* <Tab icon={<ChatIcon />} label="Contact" className ={classes.tabs}/> */}
         </Link>
    
       </Tabs>
     </Paper>
-  );
+  );} else {
+
+  }
+
 }
