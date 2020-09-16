@@ -10,16 +10,13 @@ import '../styles.scss';
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
     backgroundColor: '#009688',
-    color: '#00695f',
    
   },
   tabs: {
-      color: '#fff',
       borderBottom: 'none',
-      fontSize: '2em',
-      margin: '0.25em'
+      margin: 'auto',
+      textAlign: 'center',
   }
 });
 
@@ -59,43 +56,50 @@ function a11yProps(index) {
 export default function Header(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  const activeColor = '#1C3A3E';
+  const inactiveColor = '#ffffff';
   const vw = window.innerWidth || document.documentElement.clientWidth;
 
 if (vw > 425){
   return (
   
-    <Paper className={classes.root}>
+    <Paper square className={classes.root}>
       <h1 className="logo">{props.title}</h1>
       <Tabs
-        className={classes.tabs}
         value={value}
         onChange={handleChange}
         variant="fullWidth"
-        indicatorColor=""
-        textColor="#FFFFFF"
+        indicatorColor={activeColor}
         centered
         aria-label="icon label tabs"
       >
         <Link to={'/'} className='navItem'>
-          <TabPanel className={classes.tabs}>
-            <FontAwesomeIcon icon={['fad', 'home']} label="Home"/>
-            <Typography variant='overline'>Home</Typography>
+          <TabPanel className='navbar-item'>
+            <FontAwesomeIcon icon={['fad', 'home']} className="icon"/><br />
+            <Typography  variant='overline'>Home</Typography>
           </TabPanel>
         </Link>
         <Link to={'/resume'} className='navItem'>
-          <FontAwesomeIcon icon={['fad', 'file-alt']} label="Home" className ={classes.tabs}/>
-            {/* <Tab icon={<ListAltIcon />} label="Resume" className ={classes.tabs}/> */}
+        <TabPanel className='navbar-item'>
+            <FontAwesomeIcon icon={['fad', 'file-alt']}/><br />
+            <Typography  variant='overline'>Resume</Typography>
+          </TabPanel>
         </Link>
         <Link to={'/portfolio'} className='navItem'>
-            {/* <Tab icon={<AppsIcon />} label="Portfolio" className ={classes.tabs}/> */}
+        <TabPanel className='navbar-item'>
+            <FontAwesomeIcon icon={['fad', 'code']}/><br />
+            <Typography  variant='overline'>Work</Typography>
+          </TabPanel>
         </Link>
         <Link to={'/contact'} className='navItem'>
-            {/* <Tab icon={<ChatIcon />} label="Contact" className ={classes.tabs}/> */}
+        <TabPanel className='navbar-item'>
+            <FontAwesomeIcon icon={['fad', 'walkie-talkie']}/><br />
+            <Typography  variant='overline'>Contact Me</Typography>
+          </TabPanel>
         </Link>
    
       </Tabs>

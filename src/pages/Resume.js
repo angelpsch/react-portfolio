@@ -11,7 +11,7 @@ export default class Resume extends Component {
                 <Header title='Resume'/>
 
                  <Helmet>
-                <title>Resume</title>
+                <title>Angel Schultz : Resume</title>
                 <meta name="Resume" content="My Resume" />
                 </Helmet> 
                 <ResumeContent />

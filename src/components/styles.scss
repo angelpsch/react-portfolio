@@ -70,6 +70,18 @@ div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6 {
 
 .navItem {
     text-decoration-line: none;
+    width: fit-content;
+    color: white; 
+    margin: auto 0;
+    text-align: center; 
+    .navbar-item {
+        :hover {
+            color: $darker-teal;
+        }
+        i.icon {
+            font-size: 1em; 
+        }
+    }
 }
 
 
@@ -139,6 +151,8 @@ div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6 {
         margin: auto 0; 
         padding: 1em; 
     }
+
+
     // Media Queries
 
     @media (max-width: 1023px) {

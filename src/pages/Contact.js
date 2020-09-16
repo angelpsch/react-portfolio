@@ -52,7 +52,7 @@ export default class Contact extends Component {
             <div>
 
                 <Helmet>
-                    <title>Contact Me</title>
+                    <title>Angel Schultz : Contact Me</title>
                     <meta name="description" content="Contact Me" />
                 </Helmet>
 

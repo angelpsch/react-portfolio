@@ -9,7 +9,7 @@ export default class Portfolio extends Component {
             <div>
                 <Header title='Portfolio' />
                 <Helmet>
-                <title>Portfolio</title>
+                <title>Angel Schultz : Work</title>
                 <meta name="description" content="My Portfolio" />
                 </Helmet>
                 <PortfolioContent />
