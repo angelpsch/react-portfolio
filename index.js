@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const path = require('path');
+
 require('dotenv').config();
 
 
@@ -17,6 +19,12 @@ app.use(cors());
 app.listen(port, () => {
   console.log('We are live on port 4444');
 });
+
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+app.listen(9000);
 
 
 app.get('/', (req, res) => {
@@ -34,6 +42,10 @@ var smtpTransport = nodemailer.createTransport({
     pass: process.env.GMAIL_PASS
   }
 });
+
+
+
+
 
 var mailOptions = {
   from: data.email,
